@@ -31,17 +31,22 @@ while (userChoice != 4)
             Id++;
             break;
         case 2:
-            foreach (TaskItem in tasks)
+            foreach (TaskItem task in tasks)
             {
                 Console.WriteLine("----------------------------------");
-                Console.WriteLine($"Task Id: {tasks.Id}");
-                Console.WriteLine($"Title: {tasks.Title}");
-                Console.WriteLine($"Task Description: {tasks.Description}");
+                Console.WriteLine($"Task Id: {task.Id}");
+                Console.WriteLine($"Title: {task.Title}");
+                Console.WriteLine($"Task Description: {task.Description}");
                 Console.WriteLine("----------------------------------");
             }
             break;
         case 3:
-            Console.WriteLine("Delete or edit task");
+            Console.WriteLine("Please Type 'Edit' or 'Delete'");
+            string userEditOrDelete = Console.ReadLine();
+            if (userEditOrDelete == "Edit")
+            {
+                
+            }
             break;
         case 4:
             Console.WriteLine("Exit");
