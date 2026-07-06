@@ -41,32 +41,8 @@ while (userChoice != 4)
             }
             break;
         case 3:
-            Console.WriteLine("Please Type 'Edit' or 'Delete'");
-            foreach (TaskItem task in tasks)
-            {
-                Console.WriteLine("----------------------------------");
-                Console.WriteLine($"Task Id: {task.Id}");
-                Console.WriteLine($"Title: {task.Title}");
-                Console.WriteLine($"Task Description: {task.Description}");
-                Console.WriteLine("----------------------------------");
-            }
-            Console.WriteLine("Please enter the ID of the task you wish to view");
-            int idSelection = Convert.ToInt32(Console.ReadLine());
-            if (idSelection == Id)
-            {
-                foreach (TaskItem task in tasks)
-                {
-                    Console.WriteLine("----------------------------------");
-                    Console.WriteLine($"Task Id: {task.Id}");
-                    Console.WriteLine($"Title: {task.Title}");
-                    Console.WriteLine($"Task Description: {task.Description}");
-                    Console.WriteLine("----------------------------------");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Please input a valid ID");
-            }
+            Console.WriteLine("Please choose which task you wish to edit or delete by typing in their Id number.");
+
             break;
         case 4:
             Console.WriteLine("Exit");
